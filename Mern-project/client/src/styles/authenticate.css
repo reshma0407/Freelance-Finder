@@ -1,0 +1,165 @@
+.AuthenticatePage {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #dfe9f3, #ffffff);
+  padding-top: 10vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+.auth-navbar {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3vw;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: #ffffffee;
+  backdrop-filter: blur(5px);
+}
+
+.auth-navbar h3 {
+  font-family: "Kaushan Script", cursive;
+  margin: 0;
+  color: #4a90e2;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.auth-navbar h3:hover {
+  transform: scale(1.05);
+}
+
+.auth-navbar p {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: #444;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.auth-navbar p:hover {
+  color: #0074cc;
+}
+
+/* Auth Form */
+.authForm {
+  margin-top: 14vh;
+  width: 90%;
+  max-width: 450px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.authForm h2 {
+  margin-bottom: 24px;
+  color: #003d73;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Input Fields */
+.authFormInputs {
+  width: 100%;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.authFormInputs label {
+  color: #004466;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.authFormInputs input,
+.authForm select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  color: #003e5c;
+  border: 1px solid #a6cce3;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: border-color 0.3s ease;
+}
+
+.authFormInputs input:focus,
+.authForm select:focus {
+  border-color: #0074cc;
+  outline: none;
+}
+
+/* Remove unnecessary selector */
+.authFormInputs input #floatingInput .form-control {
+  padding: 0 !important;
+}
+
+/* Button */
+.authForm button {
+  background-color: #005fa3;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.authForm button:hover {
+  background-color: #003d73;
+}
+
+/* Toggle Text */
+.authForm p {
+  margin-top: 20px;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.authForm p span {
+  color: #005fa3;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.authForm p span:hover {
+  color: #0074cc;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .authForm {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .auth-navbar h3 {
+    font-size: 1.5rem;
+  }
+
+  .auth-navbar {
+    padding: 0 5vw;
+  }
+}
